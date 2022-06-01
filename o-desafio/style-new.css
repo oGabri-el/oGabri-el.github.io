@@ -100,12 +100,14 @@ p {
     border:rgba(20, 20, 20, .5);
     border-bottom-width: .2px;
     border-style: solid;
+    display: flex;
+    flex-direction: column;
     color: #D98D30;
     font-size: 1rem;
     position: fixed;
     bottom: 50%; 
     left: 90%;
-    top: 90%;
+    top: 85%;
     z-index: 4;  
 }
 
@@ -468,13 +470,12 @@ body {
         width: 100%;
         border-radius: 0;
     }
-
-    .aligned-section .all-projects .project-info {
+    .aligned-section .all-projects .project-info, {
         height: 100%
     }
 
     .aligned-section .all-projects .project-img {
-        height: 100%
+        height: 100%;
     }
 
     .aligned-section .project-item:nth-child(even) {
