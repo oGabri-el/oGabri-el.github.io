@@ -76,10 +76,9 @@ p {
     position:fixed;
     height: 100px;
     width: 250px;
-    display: block;
     z-index: 2;
     opacity: .2;
-    animation: 3s ease-in 5s reverse infinite both running slidein;
+    animation: 5s ease-out 4s reverse both running slidein;
 }
 
 #meu-github:hover {
@@ -94,7 +93,7 @@ p {
     display: block;
     z-index: 2;
     opacity: .5;
-    animation: 5s ease-in 5s reverse infinite both running slidein;
+    animation: 5s ease-out 4s reverse both running slidein;
 
 }
 
@@ -103,8 +102,8 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     visibility: hidden;
-    animation: fade-out .2s forwards;
-    animation-delay: .2s;
+    animation: fade-out 2s forwards;
+    animation-delay: 1s;
     z-index: 1; 
 } 
 
@@ -125,7 +124,7 @@ body {
     font-size: 5rem;
     position: relative;
     color: transparent;
-    animation: text_reveal .5s ease forwards;
+    animation: text_reveal 2s ease forwards;
     animation-delay: 1.5s;
     z-index: 3;
 }
@@ -180,9 +179,20 @@ body {
     left: 0;
     height: 100%;
     width: 0%;
-    animation: text_reveal_box 1s ease;
+    animation:3s linear reverse 1s ease slidein;
     animation-delay: .5s;
     background-color: #8C4F6B;
+}
+
+@keyframes slidein {
+    
+    0% {
+        margin-left: 100%;
+    }
+    
+    100% {
+        margin-left: 0%;
+    }
 }
 
 #presentation h1:nth-child(1) span {
