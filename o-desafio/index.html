@@ -5,88 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-new.css">
-    <title>Site daora demais</title>
+    <title>Refatoração de site do Gabriel de L.</title>
 </head>
 
 <body>
-    <section id="presentation">
-        <header class="presentation container">
-
-            <main id="Introduction">
-                <h1>Olá,<span></span></h1>
-                <h1>meu nome é<span></span></h1>
-                <h1 class="important-name" title="de Lima Batista">Gabriel<span></span></h1>
-                <nav id="header-table">
-                    <a class="cta" href="#aboutme" type="button" class="cta">Sobre mim</a>
-                    <a class="cta" href="#portfolio" type="button" class="cta">Portifolio</a>
-                    <a class="cta" href="#information" type="button" class="cta">Informações Adicionais</a>
-                    <a class="cta" href="index-original.html" type="button" class="cta">Versão Original</a>
-                </nav>
-            </main>
-        </header>
-    </section>
-
-    <section id="portfolio">
-        <main class="portfolio container">
-            <header class="portfolio header">
-                <h1 class="section-title"><span>Portifólio</span></h1>
+    <aside id="floating-credits">
+        <figure>
+            <span id="meu-github" class="cta">/oGabri-el</span>
+            <img id="github-icon" src="./github-png.png" alt="img">
+        </figure>
+    </aside>
+    <!-- <aside id="credits">
+        <span>github.com/oGabri-el/</span>
+        <figure id="github-icon">
+            <img src="./github-png.png">
+        </figure>
+    </aside> -->
+    <main id="default">
+        <section id="presentation">
+            <header class="container">
+                <section id="Introduction">
+                    <h1>Olá,<span></span></h1>
+                    <h1>meu nome é<span></span></h1>
+                    <h1 class="important-name" title="de Lima Batista">Gabriel<span></span></h1>
+                    <nav id="header-table">
+                        <a class="cta" href="#aboutme" type="button" class="cta">Sobre mim</a>
+                        <a class="cta" href="#portfolio" type="button" class="cta">Portifolio</a>
+                        <a class="cta" href="#main-footer" type="button" class="cta">Informações Adicionais</a>
+                        <a class="cta" href="index-original.html" type="button" class="cta">Versão Original</a>
+                    </nav>
+                </section>
             </header>
-            <div class="all-projects">
-                <article class="project-item">
-                    <div class="project-info">
-                        <h1>Projeto 1</h1>
-                        <h2>Codar é daora</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
-                            aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
-                            ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
-                            urna vitae dui.</p>
-                    </div>
-                    <picture class="project-img">
-                        <img src="./img-1.png" alt="img">
-                    </picture>
-                </article>
-                <article class="project-item">
+        </section>
+
+        <!-- <section id="aboutme">
+        <div class="aboutme container">
+            <header class="section-header">
+                <h1 class="section-title"><span>Sobre mim</span></h1>
+            </header>
+            <section class="all-projects">
+                <div class="project-item">
+                    <article class="project-info">
+                        <h1>Dados pessoais</h1>
+                        <h2 class="subtitle" >Apenas o necessário</h2 class="subtitle" >
+                        <p class="paragraph-resume">Olá meu nome é Gabriel de Lima, tenho 18 (2022) anos e sempre tive interesse em tecnologia e desenvolvimento. 
+                        </p>
+                        <aside class="project-img">
+                            <img src="./img-1.png" alt="img">
+                        </aside>
+                    </article>
+                    
+                </div>
+                <div class="project-item">
                     <div class="project-info">
                         <h1>Projeto 2</h1>
-                        <h2>Codar é vida</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <h2 class="subtitle" >Codar é vida</h2 class="subtitle" >
+                        <p class="paragraph-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
+
+                            <aside class="project-img">
+                                <img src="./img-1.png" alt="img">
+                            </aside>
                     </div>
-                    <picture class="project-img">
-                        <img src="./img-1.png" alt="img">
-                    </picture>
+                    
                 </article>
                 <article class="project-item">
                     <div class="project-info">
                         <h1>Projeto 3</h1>
-                        <h2>Codar é amor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <h2 class="subtitle" >Codar é amor</h2 class="subtitle" >
+                        <p class="paragraph-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
                     </div>
-                    <picture class="project-img">
+                    <aside class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </picture>
+                    </aside>
                 </article>
                 <article class="project-item">
                     <div class="project-info">
                         <h1>Projeto 4</h1>
-                        <h2>Codar é gostoso demais</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <h2 class="subtitle" >Codar é gostoso demais</h2 class="subtitle" >
+                        <p class="paragraph-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
                         </div>
-                    <picutre class="project-img">
+                    <aside class="project-img">
                         <img src="./img-1.png" alt="img">
-                    </picture>
+                    </aside>
                 </article>
+            </section>
+        </div>
+    </section> -->
+
+
+        <section id="aboutme" class="aligned-section">
+            <div class="aboutme container">
+                <header class="section-header">
+                    <h1 class="section-title"><span>Sobre mim</span></h1>
+                </header>
+                <div class="all-projects">
+                    <article id="personal-data" class="project-item">
+                        <div class="project-info">
+                            <h1>Dados pessoais</h1>
+                            <h2 class="subtitle">Apenas o importante...</h2 class="subtitle">
+                            <p class="paragraph-resume">Meu nome é Gabriel, tenho 18 anos e moro no Rio de Janeiro.
+                            </p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./computer-1869236_1920.jpg" alt="img">
+                        </aside>
+                    </article>
+                    <article id="academic-information" class="project-item">
+                        <div class="project-info">
+                            <h1>Formação acadêmica</h1>
+                            <h2 class="subtitle">Até agora eu...</h2 class="subtitle">
+                            <p class="paragraph-resume">Completei Ensino Médio ano passado (2021), nunca trabalhei,
+                                estou cursando Engenharia da Computação em EAD,< tech academy> Startse, Técnico em
+                                    Logística.</p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./books-1163695_1920.jpg" alt="img">
+                        </aside>
+                    </article>
+                    <article id="likings" class="project-item">
+                        <div class="project-info">
+                            <h1>O que gosto</h1>
+                            <h2 class="subtitle">Sempre gostei de...</h2 class="subtitle">
+                            <p class="paragraph-resume">Ter as minhas criações feitas, meu lado criativo. Meu gosto
+                                musical é extremamente variado e minha playlist favorita no momento é: TUDO - Felps </p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./guitar-4677875_1920.jpg" alt="img">
+                        </aside>
+                    </article>
+                    <article id="professional-info" class="project-item">
+                        <div class="project-info">
+                            <h1>Experiência profissional</h1>
+                            <h2 class="subtitle">No momento eu...</h2 class="subtitle">
+                            <p class="paragraph-resume">Nunca trabalhei, tenho uma experiência básica de planejamento e
+                                trabalho em grupo, entre amigos. Comecei a estudar programação em 2022 com minha
+                                faculdade e o meu primeiro contato com WEB foi com 'Startse < tech academy>'. </p>
+                        </div>
+                        <picutre class="project-img">
+                            <img src="./img-1.png" alt="img">
+                            </aside>
+                    </article>
+                </div>
             </div>
-        </main>
-    </section>
+        </section>
+
+        <section id="portfolio" class="aligned-section">
+            <div class="portfolio container">
+                <header class="section-header">
+                    <h1 class="section-title"><span>Portifolio</span></h1>
+                </header>
+                <div class="all-projects">
+                    <article id="refactored-site" class="project-item">
+                        <div class="project-info">
+                            <h1>Desafio Startse #1</h1>
+                            <h2 class="subtitle">Portifolio refatorado</h2 class="subtitle">
+                            <p class="paragraph-resume">O site original foi criado em uma live coding, e logo em seguida
+                                foi proposto um desafio para refatorar o projeto, substituindo as tags html e
+                                deixando-as semânticamente melhores, como um bônus nós fomos permitidos fazer nossas
+                                próprias alterações a praticamente todo o site.</p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./web-project.png" alt="img">
+                        </aside>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-info">
+                            <h1>Mini-projetos</h1>
+                            <h2 class="subtitle">Tenho vários hobbies e...</h2 class="subtitle">
+                            <p class="paragraph-resume">Tenho muitos mini-projetos que fiz durante a pandemia e até
+                                mesmo antes dela, eles variam entre modelos em 3d e pinturas digitais em 2d. O maior
+                                responsável por me fazer aprender e criar as minhas coisas definitivamente foi a
+                                plataforma roblox e meu grupo de amigos, algum dia eu faço algum local para exibir a
+                                maioria deles. </p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./mini-portfolio.jpg" alt="img">
+                        </aside>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-info">
+                            <h1>Mais em breve</h1>
+                            <h2 class="subtitle">Site under construction...</h2 class="subtitle">
+                            <p class="paragraph-resume">...</p>
+                        </div>
+                        <aside class="project-img">
+                            <img src="./under-construction-2629935_1920.jpg" alt="img">
+                        </aside>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <footer id="main-footer">
+                <a class="social-link" href="https://www.linkedin.com/in/gabrieldlb/"><span
+                        class="social-media-name">Linkedin</span><img title="teste" class="social-icon"
+                        src="./icone-linkedin.png" alt="link do meu linkedin">
+                </a>
+                <a class="social-link" href="https://github.com/oGabri-el"><span class="social-media-name">Github</span><img class="social-icon"
+                        src="./github-png.png" alt="link do meu GitHub">
+                </a>
+                <a class="social-link" title="Gabriel de L.#1853" href="link"><span class="social-media-name">Discord</span><img
+                        class="social-icon" src="./discord-icon.svg" alt="Minha conta discord"></a>
+                <span id="copyright" class="section-title">@Copyright Todos os direitos reservados</span>
+        </footer>
+
+    </main>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -13,6 +14,19 @@ html {
     font-family: 'Poppins', 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
+
+
+
+#default {
+    background-color: #001022;
+    background-image: linear-gradient(60deg, #240a61  ,#151F30  50%, #103778  100%); 
+}
+
+/* article {
+    font-size:;
+    margin-block-start: auto;
+    margin-block-end:auto;
+} */
 
 a {
     text-decoration: none;
@@ -43,13 +57,56 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 500;
-    color: black;
+    color: rgb(61, 201, 84);
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
 }
+
+/*Abertura da pagina*/
+#meu-github {
+    padding-top: 10px;
+    padding-left: 50px;
+    color: aliceblue;
+    display: flex;
+    offset: 10px;
+    font-size: 2rem;
+    position:fixed;
+    height: 100px;
+    width: 250px;
+    display: block;
+    z-index: 2;
+    opacity: .2;
+    animation: 3s ease-in 5s reverse infinite both running slidein;
+}
+
+#meu-github:hover {
+    user-select: none;
+}
+
+#github-icon{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    display: block;
+    z-index: 2;
+    opacity: .5;
+    animation: 5s ease-in 5s reverse infinite both running slidein;
+
+}
+
+body {
+     background-color: #001022;
+    background-position: top left;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    animation: fade-out .2s forwards;
+    animation-delay: .2s;
+    z-index: 1; 
+} 
 
 /* Seção de apresentação */
 
@@ -152,32 +209,36 @@ p {
     z-index: -1;
 }
 
-/* Seção de Portifólio */
+/* Seção Sobre mim */
 
-#portfolio {
-    background-color: #001022;
-    background-image: linear-gradient(60deg ,#151F30  50%, #103778  100%);
-}
 
-#portfolio .portfolio {
+
+
+/* Seção de estilo geral */
+
+.container {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
 }
 
-#portfolio .portfolio-header h1 {
+.aligned-section h1 {
     margin-bottom: 50px;
 }
 
-#portfolio .all-projects {
+#section-title {
+    color: yellowgreen;
+}
+
+.aligned-section .all-projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#portfolio .project-item {
+.aligned-section .project-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,10 +247,10 @@ p {
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
-}
+} 
 
-#portfolio .project-info {
-    padding: 30px;
+.aligned-section .project-info {
+    padding: 50px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
@@ -200,41 +261,137 @@ p {
     color: white;
 }
 
-#portfolio .project-info h1 {
+.aligned-section .project-info h1 {
     font-size: 4rem;
     font-weight: 500;
 }
 
-#portfolio .project-info h2 {
-    font-size: 1.8rem;
+.aligned-section .project-info h2 {
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-#portfolio .project-img {
+.subtitle {
+    color: #D95204;
+}
+
+.paragraph-resume {
+
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border: #D95204;
+    background-color: #21354b;
+    border-style: solid;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-width: 0px 0px 0px 10px;
+}
+
+.aligned-section .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.project-img {
     flex-basis: 50%;
     height: 300px;
     overflow: hidden;
     position: relative;
 }
 
-#portfolio .project-img:after {
+
+
+ #refactored-site .project-img:after {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.7;
+    background-image: linear-gradient(60deg, #B27e9e 0%, #18354b 100%);
+    opacity: .2;
+}
+ .aligned-section .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #627e9e 0%, #21354b 100%);
+    opacity: 0.5;
 }
 
-#portfolio .project-img img {
+/* .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #627e9e 0%, #21354b 100%);
+    opacity: 0.5;
+} */
+
+.aligned-section .project-img img {
     transition: 0.5s ease transform;
 }
 
-#portfolio .project-item:hover .project-img img {
+.aligned-section .project-item:hover .project-img img {
     transform: scale(1.1);
+}
+
+/* Seção do rodapé */
+
+#main-footer{
+    position: static;
+    background-color:#21354b;
+    width: 100%;
+    height: fit-content;
+} 
+
+#copyright {
+    font-size: 1rem;
+    display: block;
+    text-align:center, ;
+}
+
+.social-icon, .social-link {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display:block;
+}
+
+.social-media-name {
+    border-right-style: double;
+    padding: 2px;
+    border-radius: 2px;
+    border-right-width:5px; 
+    overflow: auto;
+    color:white; 
+    background-color:transparent;
+    display: inline-block;
+    position:absolute;
+    top: 3px;
+    left: 110px;
+}
+
+.social-icon {
+    background-color: aliceblue;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+    position: relative;
+    display: flex, inline-block;
+    border-style: double;
+    border-radius: 5px;
+    border-color:#A64444;
+    left: 80px;
 }
 
 /* Keyframes */
@@ -244,9 +401,15 @@ p {
         color: white;
     }
 }
-@keyframes fadeIn {
+@keyframes fade-out {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
     100% {
-        background: transparent;
+        
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -270,8 +433,8 @@ p {
 }
 
 /* Media Query */
-@media only screen and (min-width: 768px) {
-    #portfolio .project-item {
+@media only screen and (min-width: 720px) {
+    .aligned-section .project-item {
         flex-direction: row;
         height: 400px;
         margin: 0;
@@ -279,15 +442,15 @@ p {
         border-radius: 0;
     }
 
-    #portfolio .all-projects .project-info {
+    .aligned-section .all-projects .project-info {
         height: 100%
     }
 
-    #portfolio .all-projects .project-img {
+    .aligned-section .all-projects .project-img {
         height: 100%
     }
 
-    #portfolio .project-item:nth-child(even) {
+    .aligned-section .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
 
